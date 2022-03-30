@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(245, 246, 248);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 987;
+    align-items: center;
+    padding:8px 150px ;
+}
+.logo{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+.navigation a{
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: 15px;
+}
+.navigation a:hover{
+    color: #a1ad59;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(ph4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #a1ad59;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+.main h3{
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.m_btn{
+color: #fff;
+text-decoration: none;
+background-color: #a1ad59;
+font-size: 1em;
+font-weight: 600;
+display: inline-block;
+padding: 0.9375em 2.1875em;
+letter-spacing: 1px;
+border-radius: 15px;
+margin-bottom: 35px;
+margin-top: 40px;
+transition: 0.7s ease;
+}
+.m_btn:hover{
+    background-color: #a1ad59;
+    transform: scale(1.1);
+}
+.icons a{
+ color: #fff;
+ font-size: 1.4em;
+ padding-right: 30px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #a1ad59;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.card{
+    background-color: #fff;
+    width: 17.25em;
+    box-shadow: 0 5px 20px rgba(1 1 1 / 10);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;  
+    transition: 0.7s ease; 
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color: #a1ad59;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    
+    color: #a1ad59;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects{
+    background-color: rgb(42, 43, 44);
+}
+.projects .content{
+    margin-top: 30px;
+}
+.pro_card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 12em;
+    width: 15em;
+    overflow:hidden;
+    border-radius:10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.pro_card:hover{
+    transform: scale(1.1);
+}
+.pro_card:hover .pro_image{
+opacity: 0.9;
+}
+.pro_image img{
+    width: 100%;
+}
+
+.pro_info{
+    padding: 1em;
+}
+.pro_category{
+    font-size: 0.8em;
+    color: #000;
+}
+.pro_title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.more_det{
+    text-decoration: none;
+    color: #a1ad59;
+}
+.more_det:hover{
+    color: #a1ad59;
+}
+.content .icon{
+    font-size: 4.5em;
+
+}
+.footer{
+    background-color: #a1ad59;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_title{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.footer_title span{
+    color: #5976ad;
+}
+.footer_icons a{
+    color: #fff;
+ font-size: 1.4em;
+ padding-right: 30px;
+}
+
+@media(max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.7em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h2{
+        font-size: 1em;
+    }
+    .main h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
